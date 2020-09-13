@@ -4,40 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-    ul {
-        background: #e3e3e3;
-        padding: 20px;
-        text-align: left;
-        width: 500px;
-    }
-
-    </style>
 </head>
 <body>
-    
-    <ul>
-        <?php
-
-            foreach ($names as $name) {
-                echo "<li>$name</li>";
-            }
-        ?>
-    </ul>
-
-    <ul>
-        <?php
-            foreach ($animals as $animal) {
-                echo "<li>$animal</li>";
-            }
-        ?>
-    </ul>
-
-    <ul>
-        <?php foreach ($person as $feature => $val) : ?>
-            <li><strong><?=$feature;?>: </strong><?=$val;?></li>
-        <?php endforeach; ?>
-    </ul>
-
+    <h1>Task Of the Day:</h1>
+        <ul>
+                <li>
+                    <strong>Description: </strong> <?= $task['title']; ?>
+                </li>
+                <li>
+                    <strong>Due Date: </strong> <?= $task['due']; ?>
+                </li>
+                <li>
+                    <strong>Assignee: </strong> <?= $task['assigned_to']; ?>
+                </li>
+                <li>
+                    <strong>Status: </strong> <?= $task['completed'] ? 'Complete': 'Incomplete'; ?>
+                </li>
+        </ul>
 </body>
 </html>
