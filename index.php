@@ -1,33 +1,12 @@
 <?php
 
-// $greeting = 'Hello World';
-
-$names = [
-    'Amanda',
-    'Matt',
-    'Charles'
+$task = [
+        'title' => 'Wash car',
+        'due' => 'Monday, 9 AM',
+        'assigned_to' => 'Amanda',
+        'completed' => false
 ];
 
-$animals = [
-    'Horse',
-    'Dog',
-    'Cat',
-    'Monkey',
-    'Elephant',
-    'Koala'
-];
 
-$person = [
-    'age' => 28,
-    'hair' => 'brown',
-    'career' => 'jr. php developer'
-];
-
-$person['name'] = 'Amanda';
-
-// foreach ($names as $name) {
-
-//     echo $name . ',';
-// }
 
 require 'index.view.php';
