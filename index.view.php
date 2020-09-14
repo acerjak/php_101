@@ -6,20 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Task Of the Day:</h1>
-        <ul>
-                <li>
-                    <strong>Description: </strong> <?= $task['title']; ?>
-                </li>
-                <li>
-                    <strong>Due Date: </strong> <?= $task['due']; ?>
-                </li>
-                <li>
-                    <strong>Assignee: </strong> <?= $task['assigned_to']; ?>
-                </li>
-                <li>
-                    <strong>Status: </strong> <?= $task['completed'] ? 'Complete': 'Incomplete'; ?>
-                </li>
-        </ul>
+    <h1>Club Code</h1>
+    <ul>
+        <li>
+            <?php ageCheck(20); ?>
+        </li>
+    </ul>
 </body>
 </html>
