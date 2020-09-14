@@ -1,12 +1,11 @@
 <?php
 
-$task = [
-        'title' => 'Wash car',
-        'due' => 'Monday, 9 AM',
-        'assigned_to' => 'Amanda',
-        'completed' => false
-];
+require 'functions.php';
 
+$person = [
+        'age' => 21,
+        'name' => 'Amanda'
+];
 
 
 require 'index.view.php';
