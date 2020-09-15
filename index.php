@@ -1,11 +1,10 @@
 <?php
 
-require 'functions.php';
+$query = require('bootstrap.php');
 
-$person = [
-        'age' => 21,
-        'name' => 'Amanda'
-];
-
+$tasks = $query->selectAll('todos');
 
 require 'index.view.php';
+
+
+
