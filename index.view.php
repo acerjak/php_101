@@ -6,11 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Club Code</h1>
+    <h1>Task List:</h1>
     <ul>
-        <li>
-            <?php ageCheck(20); ?>
-        </li>
+        <?php foreach ($tasks as $task) : ?>
+
+            <li>
+                <?php if ($task->completed) : ?>
+
+                    <strike>
+
+                <?php endif; ?>
+
+                <?= $task->description; ?>
+
+                <?php if ($task->completed) : ?>
+                    </strike>
+                <?php endif; ?>
+
+            </li>
+
+        <?php endforeach; ?>
     </ul>
 </body>
 </html>
